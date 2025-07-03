@@ -11,7 +11,7 @@ include_once 'includes/header.php';
     <div class="swiper-slide">
       <img src="assets/images/homebg1.jpeg" alt="Slide 1">
       <div class="slide-caption">
-        <h2>WELCOME TO <br> TATA | DIMO RAKS AUTO SHOW</h2>
+        <h2>WELCOME TO <br> TATA | DIMO <br> RAKS AUTO SHOW</h2>
         <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
       </div>
     </div>
