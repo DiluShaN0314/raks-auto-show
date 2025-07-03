@@ -62,6 +62,32 @@ include_once 'includes/header.php';
     </div>
 </section>
 
+<!-- <section class="highlights"> -->
+<section class="mission">
+    <h2>What to Expect</h2>
+    <div class="highlight-grid">
+        <div class="highlight-card">
+            <i class="fas fa-car"></i>
+            <h3>Supercar Displays</h3>
+            <p>Ferrari, Lamborghini, Rolls-Royce & more!</p>
+        </div>
+        <div class="highlight-card">
+            <i class="fas fa-motorcycle"></i>
+            <h3>Motorbike Lottery</h3>
+            <p>Win a brand-new bike!</p>
+        </div>
+        <div class="highlight-card">
+            <i class="fas fa-tools"></i>
+            <h3>Live Tech Demos</h3>
+            <p>Cutting-edge automotive innovations</p>
+        </div>
+        <div class="highlight-card">
+            <i class="fas fa-utensils"></i>
+            <h3>Food & Entertainment</h3>
+            <p>Fun for the whole family</p>
+        </div>
+    </div>
+</section>
 
 <!-- === Booking Gateway Section === -->
 <?php include 'sections/booking-gateway.php'; ?>
