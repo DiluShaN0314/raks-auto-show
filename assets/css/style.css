@@ -8,11 +8,15 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 999;
-    background-color: #fff;
+    /* background-color: #fff; */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: background-color 0.3s ease;
+    height: 100px;
+    border-radius: 65px;
+    width: 98%;
+    margin: 10px;
+    /* opacity: 0.75; */
 }
 
 /* Add padding-top to body so content doesn’t go under header */
@@ -26,10 +30,36 @@ body.dark-mode header {
     box-shadow: 0 2px 8px rgba(255,255,255,0.05);
 }
 
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index:-1;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../images/nav.jpg') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -1;
+    opacity: 0.8;
+    pointer-events: none; /* allows clicks to pass through */
+}
+
 .site-header, .site-footer {
     background: #1b334b;
     color: white;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+
 }
 .site-header .logo {
     display: flex;
@@ -42,10 +72,11 @@ body.dark-mode header {
 /* === Navbar Styling === */
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 30px;
     padding: 20px 0;
     background-color: transparent;
+    margin-top: -52px;
 }
 
 .navbar a {
@@ -54,6 +85,7 @@ body.dark-mode header {
     color: #bfbfbf;
     font-weight: 500;
     font-size: 1rem;
+    font-weight: bolder;
     transition: color 0.3s ease;
 }
 
@@ -244,41 +276,42 @@ body.dark-mode #toggle-dark-mode:hover {
 
 /* Slider container */
 .partner-slider {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+    background: radial-gradient(ellipse at center, #e0e0e0 0%, #ccc 100%);
+    border-radius: 20px;
+    box-shadow: inset 0 8px 20px rgba(0, 0, 0, 0.2), inset 0 -8px 20px rgba(0, 0, 0, 0.2);
+    perspective: 800px;
 }
 
 .partner-track {
-  display: flex;
-  width: max-content;
-  animation: scroll-left 30s linear infinite;
-  gap: 60px;
+    display: flex;
+    gap: 60px;
+    animation: scroll-horizontal 30s linear infinite;
+    padding: 20px;
+    transform: translateZ(0); /* trick to enhance GPU rendering */
 }
 
 .partner-track img {
-  height: 60px;
-  object-fit: contain;
-  opacity: 0.9;
-  transition: transform 0.3s ease;
+    height: 60px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 .partner-track img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
 }
 
-#title_sponsor:hover,
-#media_partner:hover {
-  transform: scale(1.1);
-}
-/* Scroll animation */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+/* Horizontal auto scroll */
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 
@@ -1047,7 +1080,7 @@ body.dark-mode .copyright {
   .hamburger {
     display: flex;
     position: absolute;
-    top: 25px;
+    top: 39px;
     right: 20px;
   }
 }
@@ -1197,7 +1230,7 @@ body.dark-mode .copyright {
     height: 200px;
     overflow: hidden;
     position: relative;
-    margin: 0 0 0 63px;
+    /* margin: 0 0 0 63px; */
   }
 
   .partner-track {
@@ -1280,4 +1313,83 @@ body.dark-mode .copyright {
     .mission h2 {
         font-size: 28px;
     }
+}
+
+.participant-carousel-3d {
+  padding: 10px;
+    margin: 30px 0 0 0;
+  background: #f2f2f2;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.participant-carousel-3d h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.carousel-3d-container {
+  perspective: 1000px;
+  height: 200px;
+  position: relative;
+  width: 1200px;
+}
+
+.carousel-3d-track {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate3dLogos 20s linear infinite;
+}
+
+.carousel-3d-track img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+
+/* Position each image around a 3D circle */
+.carousel-3d-track img:nth-child(1) { transform: rotateY(0deg) translateZ(300px); }
+.carousel-3d-track img:nth-child(2) { transform: rotateY(51.4deg) translateZ(300px); }
+.carousel-3d-track img:nth-child(3) { transform: rotateY(102.8deg) translateZ(300px); }
+.carousel-3d-track img:nth-child(4) { transform: rotateY(154.2deg) translateZ(300px); }
+.carousel-3d-track img:nth-child(5) { transform: rotateY(205.6deg) translateZ(300px); }
+.carousel-3d-track img:nth-child(6) { transform: rotateY(257deg) translateZ(300px); }
+.carousel-3d-track img:nth-child(7) { transform: rotateY(308.4deg) translateZ(300px); }
+
+@keyframes rotate3dLogos {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-3d-container {
+    perspective: none;
+    height: auto;
+  }
+
+  .carousel-3d-track {
+    position: static;
+    animation: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .carousel-3d-track img {
+    position: static;
+    transform: none !important;
+    height: 60px;
+  }
 }
