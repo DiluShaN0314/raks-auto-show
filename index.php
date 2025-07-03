@@ -11,25 +11,25 @@ include_once 'includes/header.php';
     <div class="swiper-slide">
       <img src="assets/images/homebg1.jpeg" alt="Slide 1">
       <div class="slide-caption">
-        <h2>Welcome to Raks Auto Show</h2>
-        <p>Sri Lanka’s Ultimate Auto Experience</p>
+        <h2>WELCOME TO <br> TATA | DIMO RAKS AUTO SHOW</h2>
+        <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
       </div>
     </div>
 
     <div class="swiper-slide">
       <img src="assets/images/homebg2.jpeg" alt="Slide 2">
       <div class="slide-caption">
-        <h2>Exotic Cars. Iconic Brands.</h2>
-        <p>Witness Luxury, Innovation & Speed</p>
+        <h2>RAKS FIRST ANNUAL AUTO SHOW 2025</h2>
+        <p>NORTHERN SRI LANKA'S PREMIER AUTOMOTIVE SHOWCASE</p>
       </div>
     </div>
 
     <div class="swiper-slide">
       <img src="assets/images/homebg3.jpeg" alt="Slide 3">
       <div class="slide-caption">
-        <h2>Join the Movement</h2>
+        <h2>JOIN THE MOVEMENT</h2>
         <p>Book Your Tickets Now</p>
-        <a href="router.php?page=booking" class="btn-slide">Book Now</a>
+        <a href="router.php?page=booking" class="btn-slide">BOOK NOW</a>
       </div>
     </div>
 
