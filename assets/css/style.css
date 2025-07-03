@@ -34,7 +34,7 @@ body.dark-mode header {
 .site-header .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     margin: 0 0 0 -120px;
 }
 
@@ -65,7 +65,7 @@ body.dark-mode header {
     bottom: -5px;
     height: 2px;
     width: 0;
-    background-color: #00b894;
+    background-color: #99d0d4;
     transition: width 0.3s ease;
 }
 
@@ -76,7 +76,7 @@ body.dark-mode header {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #00b894;
+    color: #09c4d1;
 }
 
 .footer-columns {
@@ -425,7 +425,7 @@ button:hover {
 
 /* === Countdown Timer Section === */
 .countdown {
-    background: #111;
+    background: #164462;
     color: #fff;
     padding: 60px 20px;
     text-align: center;
