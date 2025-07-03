@@ -1,0 +1,75 @@
+/* === Admin Panel CSS === */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container {
+    max-width: 1000px;
+    margin:  130px auto auto auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.admin-container h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.admin-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.admin-nav a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.admin-nav a:hover {
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #003f88;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.gallery-grid img {
+    max-width: 200px;
+    border-radius: 8px;
+}
