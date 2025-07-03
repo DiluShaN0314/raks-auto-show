@@ -32,7 +32,7 @@
 <header class="site-header">
     <div class="container">
         <a href="home" class="logo">
-            <img src="assets/images/TATA-Raks-auto-show-with-out-BG.png" alt="Raks Auto Show Logo" height="50">
+            <img src="assets/images/TATA-Raks-auto-show-with-out-BG.png" alt="Raks Auto Show Logo" height="90">
             <img src="assets/images/TATA-Raks-auto-show-Website-icon.png" alt="Raks Auto Show Logo" height="50">
         </a>
         <?php $currentPage = $_GET['page'] ?? 'home'; ?>

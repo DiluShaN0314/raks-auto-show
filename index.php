@@ -28,7 +28,7 @@ include_once 'includes/header.php';
       <img src="assets/images/homebg3.jpeg" alt="Slide 3">
       <div class="slide-caption">
         <h2>JOIN THE MOVEMENT</h2>
-        <p>Book Your Tickets Now</p>
+        <p>BOOK YOUR TICKETS NOW</p>
         <a href="router.php?page=booking" class="btn-slide">BOOK NOW</a>
       </div>
     </div>
