@@ -96,13 +96,14 @@ include_once 'includes/header.php';
                 The Raks Auto Show 2025 is the first of its kind in Northern Sri Lanka, bringing together car enthusiasts, industry leaders, and families for an unforgettable experience.
             </p>
         </div>
-
-        <button class="cta-button">
-            Learn More About Us
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-            </svg>
-        </button>
+        <a href="about">
+            <button class="cta-button">
+                Learn More About Us
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                </svg>
+            </button>
+        </a>
     </div>
 
     <div class="story-image">
@@ -141,7 +142,57 @@ include_once 'includes/header.php';
             <p>"Powering businesses with tailored financial solutions. From startup loans to corporate treasury services we fuel growth."</p>
         </div>
     </div>
+    <a href="exhibitors">
+        <button class="cta-button">
+            Learn More Exhibitors
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+        </button>
+    </a>
 </section>
+
+<!-- === Contact Preview Section === -->
+<section class="contact-preview">
+    <div class="section-header2" style="text-align: center;">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Contact <span class="highlight">Us</span></h2>
+        <div class="divider2"></div>
+    </div>
+
+    <div class="contact-info-box">
+        <p><strong>Phone:</strong> +94 77 123 4567</p>
+        <p><strong>Email:</strong> info@raksautoshow.lk</p>
+        <p><strong>Location:</strong> No. 123, KKS Road, Jaffna, Sri Lanka</p>
+        <a href="contact">
+            <button class="cta-button">View More Contact Info</button>
+        </a>
+    </div>
+</section>
+
+
+<!-- === Gallery Preview Section === -->
+<section class="gallery-preview">
+    <div class="section-header2" style="text-align: center;">
+        <span class="section-tag">Event Highlights</span>
+        <h2>Photo <span class="highlight">Gallery</span></h2>
+        <div class="divider2"></div>
+    </div>
+
+    <div class="gallery-thumbnails">
+        <img src="http://localhost/raks-auto-show/admin/uploads/1751446806_WhatsApp%20Image%202025-07-01%20at%2020.37.31_66034f55.jpg" alt="Gallery Image 1">
+        <img src="http://localhost/raks-auto-show/admin/uploads/1751452838_car-1.png" alt="Gallery Image 2">
+        <img src="http://localhost/raks-auto-show/admin/uploads/1751452845_car-2.png" alt="Gallery Image 3">
+        <!-- Add 2–3 thumbnails only -->
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="gallery">
+            <button class="cta-button">View Full Gallery</button>
+        </a>
+    </div>
+</section>
+
 
 <!-- === Booking Gateway Section === -->
 <?php include 'sections/booking-gateway.php'; ?>
