@@ -11,8 +11,7 @@ include_once 'includes/header.php';
     <div class="swiper-slide">
       <img src="assets/images/homebg1.jpeg" alt="Slide 1">
       <div class="slide-caption">
-        <h2>WELCOME TO <br> TATA | DIMO <br> RAKS AUTO SHOW</h2>
-        <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
+        <h2>WELCOME TO <br>DIMO <br> TATA MOTORS RAKS AUTO SHOW - 2025  <br> JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</h2>
       </div>
     </div>
 
@@ -40,19 +39,22 @@ include_once 'includes/header.php';
 
 
 <!-- === Countdown Timer (Events start in) === -->
-<section class="countdown">
-    <h2>Events start in:</h2>
-    <div id="countdown-timer">
+<section class="countdown-section">
+    <h2 class="countdown-heading"><b>Event Starts In</b> </h2>
+    <div class="countdown-container">
         <div class="countdown-box">
             <div class="countdown-number" id="days">00</div>
+            <span class="countdown-separator">:</span>
             <div class="countdown-label">Days</div>
         </div>
         <div class="countdown-box">
             <div class="countdown-number" id="hours">00</div>
+            <span class="countdown-separator">:</span>
             <div class="countdown-label">Hours</div>
         </div>
         <div class="countdown-box">
             <div class="countdown-number" id="minutes">00</div>
+            <span class="countdown-separator">:</span>
             <div class="countdown-label">Minutes</div>
         </div>
         <div class="countdown-box">
@@ -60,31 +62,83 @@ include_once 'includes/header.php';
             <div class="countdown-label">Seconds</div>
         </div>
     </div>
+    <div class="countdown-progress">
+        <div class="progress-bar"></div>
+    </div>
 </section>
 
+<section class="our-story">
+    <div class="story-content">
+        <div class="section-header">
+            <span class="section-tag">About Us</span>
+            <h2>Our <span class="highlight">Story</span></h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="story-card">
+            <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2692e4" width="24" height="24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/>
+                </svg>
+            </div>
+            <p>
+                Raks Engineering and Technologies Pvt Ltd, the organizer of Raks Auto Show 2025, is a leading name in Jaffna's automotive industry. From premium car detailing at Raks Car Wash to hosting this landmark event, we are committed to driving innovation and excellence.
+            </p>
+        </div>
+
+        <div class="story-card">
+            <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2692e4" width="24" height="24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+                </svg>
+            </div>
+            <p>
+                The Raks Auto Show 2025 is the first of its kind in Northern Sri Lanka, bringing together car enthusiasts, industry leaders, and families for an unforgettable experience.
+            </p>
+        </div>
+
+        <button class="cta-button">
+            Learn More About Us
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="story-image">
+        <div class="image-frame">
+            <img src="assets/images/our.png" alt="Raks Team">
+            
+            <div class="image-overlay">
+                <span>Since 2015</span>
+                <h3>Pioneering Automotive Excellence</h3>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- <section class="highlights"> -->
 <section class="mission">
     <h2>What to Expect</h2>
     <div class="highlight-grid">
         <div class="highlight-card">
             <i class="fas fa-car"></i>
-            <h3>Supercar Displays</h3>
-            <p>Ferrari, Lamborghini, Rolls-Royce & more!</p>
+            <h3>Vehicles Companies</h3>
+            <p>.................</p>
         </div>
         <div class="highlight-card">
             <i class="fas fa-motorcycle"></i>
-            <h3>Motorbike Lottery</h3>
-            <p>Win a brand-new bike!</p>
+            <h3>Super cars & Vintage Vehicle Displays</h3>
+            <p>.............</p>
         </div>
         <div class="highlight-card">
             <i class="fas fa-tools"></i>
-            <h3>Live Tech Demos</h3>
-            <p>Cutting-edge automotive innovations</p>
+            <h3>Car Tools Companies</h3>
+            <p>"Precision engineered automotive tools for professional mechanics. Built to last, designed for performance—because every turn of the wrench matters."</p>
         </div>
         <div class="highlight-card">
             <i class="fas fa-utensils"></i>
-            <h3>Food & Entertainment</h3>
-            <p>Fun for the whole family</p>
+            <h3>Banks,Insurance & Leasing Companies</h3>
+            <p>"Powering businesses with tailored financial solutions. From startup loans to corporate treasury services we fuel growth."</p>
         </div>
     </div>
 </section>

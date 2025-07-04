@@ -4,7 +4,7 @@
         <h2>PARTNER BRANDS</h2>
         <h3>TITLE SPONSOR</h3>
         <img src="assets/images/partners/Tata Motors Logo.jpg" alt="TATA" style="width: 300px; height: 120px;" id="title_sponsor">
-        <h3>MEDIA PARTNER</h3>
+        <h3>OFFICIAL MEDIA PARTNER</h3>
         <img src="assets/images/partners/IMG_0610.PNG" alt="TATA" style=" width: 161px; height: 66px; padding: 10px;" id="media_partner">
         <h3>PARTICIPANTS</h3>
         <!-- New 3D Participant Section -->
