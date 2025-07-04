@@ -11,24 +11,24 @@ include_once 'includes/header.php';
     <div class="swiper-slide">
       <img src="assets/images/homebg1.jpeg" alt="Slide 1">
       <div class="slide-caption">
-        <h2>WELCOME TO <br>DIMO <br> TATA MOTORS RAKS AUTO SHOW - 2025  <br> JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</h2>
+        <h2>WELCOME TO <br>DIMO <br> TATA MOTORS RAKS AUTO SHOW - 2025  <br> </h2>
+        <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
       </div>
     </div>
 
     <div class="swiper-slide">
       <img src="assets/images/homebg2.jpeg" alt="Slide 2">
       <div class="slide-caption">
-        <h2>RAKS FIRST ANNUAL AUTO SHOW 2025</h2>
-        <p>NORTHERN SRI LANKA'S PREMIER AUTOMOTIVE SHOWCASE</p>
+        <h2>WELCOME TO <br>DIMO <br> TATA MOTORS RAKS AUTO SHOW - 2025  <br> </h2>
+        <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
       </div>
     </div>
 
     <div class="swiper-slide">
       <img src="assets/images/homebg3.jpeg" alt="Slide 3">
       <div class="slide-caption">
-        <h2>JOIN THE MOVEMENT</h2>
-        <p>BOOK YOUR TICKETS NOW</p>
-        <a href="router.php?page=booking" class="btn-slide">BOOK NOW</a>
+        <h2>WELCOME TO <br>DIMO <br> TATA MOTORS RAKS AUTO SHOW - 2025  <br> </h2>
+        <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
       </div>
     </div>
 
@@ -74,7 +74,7 @@ include_once 'includes/header.php';
             <h2>Our <span class="highlight">Story</span></h2>
             <div class="divider"></div>
         </div>
-        
+
         <div class="story-card">
             <div class="icon-box">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2692e4" width="24" height="24">
@@ -108,7 +108,7 @@ include_once 'includes/header.php';
     <div class="story-image">
         <div class="image-frame">
             <img src="assets/images/our.png" alt="Raks Team">
-            
+
             <div class="image-overlay">
                 <span>Since 2015</span>
                 <h3>Pioneering Automotive Excellence</h3>
