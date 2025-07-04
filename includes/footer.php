@@ -14,19 +14,19 @@
             <!-- Contact Info -->
             <div class="footer-box">
                 <h3>Contact Us</h3>
-                <p>Email: <a href="mailto:raksautoshow@gmail.com">raksautoshow@gmail.com</a></p>
-                <p>Phone: <a href="tel:+94771234567">+94 77 123 4567</a></p>
-                <p>Address: Colombo, Sri Lanka</p>
+                <p>Email: <a href="mailto:info@raks.lk">info@raks.lk</a></p>
+                <p>Phone: <a href="tel:+94 77 071 0000">+94 77 071 0000</a></p>
+                <p>Address: 167/2, Raja Street, kopay, Jaffna, Sri Lanka</p>
             </div>
 
             <!-- Social Media -->
             <div class="footer-box">
                 <h3>Join Us</h3>
                 <div class="social-icons">
-                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                     <a href="https://www.facebook.com/share/1EYpbaN9kR/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/rakscarwash?igsh=b2E4eWxnN3BnbGVr&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@rakscarwash?_t=ZS-8xDtBrVKGzH&_r=1" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@Rakscarwash" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -44,7 +44,7 @@
         </div>
 
         <div class="copyright">
-            <p>&copy; <?php echo date('Y'); ?> Raks Auto Show. All rights reserved.</p>
+            <p>&copy; <?php echo date('2023');?>  Raks Car Wash  _ō͡≡o˞̶_ All rights reserved.</p>
         </div>
     </div>
 </footer>

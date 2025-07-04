@@ -43,9 +43,15 @@
             <a href="exhibitors" class="<?= ($currentPage == 'exhibitors') ? 'active' : '' ?>">Exhibitors</a>
             <a href="gallery" class="<?= ($currentPage == 'gallery') ? 'active' : '' ?>">Gallery</a>
             <a href="contact" class="<?= ($currentPage == 'contact') ? 'active' : '' ?>">Contact</a>
+            <a href="booking" class="book-now-button">
+        <span class="button-text">Book Tickets</span>
+         
+    </a>
         </nav>
         <div class="hamburger" id="hamburger">
-        <span></span>
+        <span>
+
+        </span>
         <span></span>
         <span></span>
         </div>
