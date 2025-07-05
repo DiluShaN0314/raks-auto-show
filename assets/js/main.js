@@ -67,4 +67,64 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.classList.toggle('active');
         navbar.classList.toggle('show');
     });
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        // Animate content
+        entry.target.querySelectorAll('.slide-in').forEach(el => {
+            el.classList.add('animate');
+        });
+
+        // Animate car
+        const car = entry.target.querySelector('.racing-car');
+        car.classList.remove('animate'); // Reset if re-scrolling
+        void car.offsetWidth; // Force reflow to restart animation
+        car.classList.add('animate');
+        }
+    });
+    }, { threshold: 0.4 });
+
+    document.querySelectorAll('.animate-section').forEach(section => {
+    observer.observe(section);
+    });
+
+    const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const thumbnails = entry.target;
+        if (entry.isIntersecting) {
+        thumbnails.classList.add('animate');
+        } else {
+        // reset animation to allow re-trigger
+        thumbnails.classList.remove('animate');
+        thumbnails.querySelectorAll('img').forEach(img => {
+            img.style.animation = 'none';
+            img.offsetHeight; // force reflow
+            img.style.animation = '';
+        });
+        }
+    });
+    }, { threshold: 0.4 });
+
+    observer2.observe(document.querySelector('.gallery-thumbnails'));
+});
+
+window.addEventListener('scroll', () => {
+    const leftBeam = document.getElementById('leftBeam');
+    const rightBeam = document.getElementById('rightBeam');
+    const section = document.querySelector('.contact-preview');
+    const triggerPoint = window.innerHeight * 0.85;
+
+    if (section.getBoundingClientRect().top < triggerPoint) {
+        if (!leftBeam.classList.contains('active')) {
+            leftBeam.classList.add('active');
+            rightBeam.classList.add('active');
+
+            // Remove after animation ends so it can re-trigger
+            setTimeout(() => {
+                leftBeam.classList.remove('active');
+                rightBeam.classList.remove('active');
+            }, 1500);
+        }
+    }
 });

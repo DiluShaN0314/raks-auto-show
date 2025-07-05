@@ -1170,7 +1170,7 @@ body.dark-mode .copyright {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
   pointer-events: none; /* makes sure slider clicks still work */
   width: max-content;
-  
+
 }
 
 .swiper {
@@ -1890,12 +1890,42 @@ body.dark-mode .copyright {
     font-size: 1.1rem;
 }
 
+/* Container for animation */
 .gallery-thumbnails {
     display: flex;
+    gap: 20px;
     justify-content: center;
-    gap: 15px;
     flex-wrap: wrap;
 }
+
+.gallery-thumbnails img {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+/* Animated state */
+.gallery-thumbnails.animate img:nth-child(1) {
+    animation: jumpIn 0.5s forwards 0.2s;
+}
+.gallery-thumbnails.animate img:nth-child(2) {
+    animation: jumpIn 0.5s forwards 0.4s;
+}
+.gallery-thumbnails.animate img:nth-child(3) {
+    animation: jumpIn 0.5s forwards 0.6s;
+}
+
+@keyframes jumpIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .gallery-thumbnails img {
     width: 150px;
@@ -2051,5 +2081,99 @@ body.dark-mode .copyright {
 
     .image-overlay {
         position: unset;
+    }
+}
+
+/* Ensure section is relative to position child absolutely */
+.our-story.animate-section {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Car overlay placed over everything */
+.car-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10; /* High to go over content */
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* Car styling */
+.racing-car {
+  position: absolute;
+  bottom: 0;
+  left: -300px;
+  height: 80%;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+/* Animate across and fade out */
+.racing-car.animate {
+  animation: driveAcross 3s ease-out forwards;
+}
+
+@keyframes driveAcross {
+  0% { left: -300px; opacity: 1; }
+  70% { left: 50%; transform: translateX(-50%); opacity: 1; }
+  100% { left: 120%; opacity: 0; }
+}
+
+/* Ensure contact section is positioned relative */
+.contact-preview {
+    background: url('../images/headlight.png') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shared beam style */
+.headlight-beam {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7) 10%, transparent 70%);
+    opacity: 0;
+    transform: scale(1) rotate(0deg);
+    pointer-events: none;
+    z-index: 10;
+    filter: blur(8px);
+    animation: none;
+}
+
+/* Left beam: comes from left of center */
+.left-beam {
+    left: calc(50% - 44%);
+    transform-origin: top right;
+}
+
+/* Right beam: comes from right of center */
+.right-beam {
+    left: calc(50% + 30%);
+    transform-origin: top left;
+}
+
+/* Animation */
+.headlight-beam.active {
+    animation: headlightBeamFlash 3s ease-out forwards;
+}
+
+@keyframes headlightBeamFlash {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(10deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.4) rotate(-10deg);
     }
 }
