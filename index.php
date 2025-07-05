@@ -114,13 +114,13 @@ include_once 'includes/header.php';
     <div class="highlight-grid">
         <div class="highlight-card">
             <i class="fas fa-car"></i>
-            <h3>Vehicles Companies</h3>
-            <p>.................</p>
+            <h3>The Ultimate Auto Line-Up</h3>
+            <p>Explore the latest innovations in cars, bikes, and more — all in one place!</p>
         </div>
         <div class="highlight-card">
             <i class="fas fa-motorcycle"></i>
-            <h3>Super cars & Vintage Vehicle Displays</h3>
-            <p>.............</p>
+            <h3>Vintage Vehicle Display</h3>
+            <p>Step into the past with a special showcase of classic cars and bikes.</p>
         </div>
         <div class="highlight-card">
             <i class="fas fa-tools"></i>
