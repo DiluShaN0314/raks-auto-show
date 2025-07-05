@@ -1349,7 +1349,7 @@ body.dark-mode .copyright {
   }
 
   .slide-caption p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .btn-slide {
@@ -1950,6 +1950,11 @@ body.dark-mode .copyright {
 }
 
 /* === Ultra Small Screen Support (max-width: 380px) === */
+@media (max-width: 550px) {
+    .slide-caption p {
+        font-size: 13px !important;
+    }
+}
 @media (max-width: 380px) {
     .navbar {
         flex-direction: column;
