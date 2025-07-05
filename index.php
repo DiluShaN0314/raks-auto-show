@@ -102,7 +102,7 @@ include_once 'includes/header.php';
             <img src="assets/images/our.png" alt="Raks Team">
 
             <div class="image-overlay">
-                <span>Since 2015</span>
+                <span>Since 2025</span>
                 <h3>Pioneering Automotive Excellence</h3>
             </div>
         </div>
@@ -152,9 +152,9 @@ include_once 'includes/header.php';
     </div>
 
     <div class="contact-info-box">
-        <p><strong>Phone:</strong> +94 77 123 4567</p>
-        <p><strong>Email:</strong> info@raksautoshow.lk</p>
-        <p><strong>Location:</strong> No. 123, KKS Road, Jaffna, Sri Lanka</p>
+        <p><strong>Phone:</strong> +94 77 071 0000</p>
+        <p><strong>Email:</strong> info@raks.lk</p>
+        <p><strong>Location:</strong> 167/2, Raja Street, kopay, Jaffna, Sri Lanka</p>
         <a href="contact">
             <button class="cta-button">View More Contact Info</button>
         </a>
