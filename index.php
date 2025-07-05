@@ -58,8 +58,8 @@ include_once 'includes/header.php';
     </div>
 </section>
 
-<section class="our-story">
-    <div class="story-content">
+<section class="our-story animate-section">
+    <div class="story-content slide-in">
         <div class="section-header">
             <span class="section-tag">About Us</span>
             <h2>Our <span class="highlight">Story</span></h2>
@@ -97,7 +97,7 @@ include_once 'includes/header.php';
         </a>
     </div>
 
-    <div class="story-image">
+    <div class="story-image slide-in">
         <div class="image-frame">
             <img src="assets/images/our.png" alt="Raks Team">
 
@@ -106,6 +106,11 @@ include_once 'includes/header.php';
                 <h3>Pioneering Automotive Excellence</h3>
             </div>
         </div>
+    </div>
+
+      <!-- Racing car overlay -->
+    <div class="car-overlay">
+        <img src="assets/images/features.png" alt="Racing Car" class="racing-car">
     </div>
 </section>
 <!-- <section class="highlights"> -->
@@ -145,6 +150,8 @@ include_once 'includes/header.php';
 
 <!-- === Contact Preview Section === -->
 <section class="contact-preview">
+     <div class="headlight-beam left-beam" id="leftBeam"></div>
+    <div class="headlight-beam right-beam" id="rightBeam"></div>
     <div class="section-header2" style="text-align: center;">
         <span class="section-tag">Get In Touch</span>
         <h2>Contact <span class="highlight">Us</span></h2>
