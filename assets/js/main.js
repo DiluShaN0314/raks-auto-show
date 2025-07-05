@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     loader.style.opacity = '0';
     setTimeout(() => {
       loader.style.display = 'none';
-    }, 1000);
+    }, 2500);
 
     function showLoaderBeforeRedirect(e) {
         e.preventDefault();
         document.getElementById('loader-wrapper').style.display = 'flex';
         setTimeout(() => {
         window.location.href = e.target.href;
-        }, 1000); // short delay
+        }, 2500); // short delay
         return false;
     }
 
