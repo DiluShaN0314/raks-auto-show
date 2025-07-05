@@ -32,9 +32,10 @@
  <!-- === Loading Screen === -->
     <div id="loader-wrapper">
       <div class="loader-logo">
-        <img src="assets/images/TATA-Raks-auto-show-Website-icon.png" alt="Loading..." />
+        <img src="assets/images/logo.png" alt="Loading..." />
       </div>
     </div>
+     
 <!-- === Header Section === -->
 <header class="site-header">
     <div class="container">

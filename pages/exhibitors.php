@@ -1,14 +1,29 @@
-<section class="styled-section">
-    <h2>Exhibitors</h2>
-    <p>Meet the brands and teams showcasing their latest and most iconic models at Raks Auto Show:</p>
-
-    <ul>
-        <li><strong>SpeedX Motors</strong> – Launching their all-new electric SUV</li>
-        <li><strong>AutoZone Lanka</strong> – Performance tuning and racing gear</li>
-        <li><strong>Classic Car Club</strong> – Rare vintage cars on display</li>
-        <li><strong>HyperMods</strong> – Custom bike and car mods</li>
-        <li><strong>Tesla Lanka</strong> – Official EV tech partner</li>
-    </ul>
-
-    <p>Interested in becoming an exhibitor? <a href="router.php?page=contact">Contact us</a> today.</p>
+<section class="exhibitors-carousel">
+  <h2>Featured Exhibitors</h2>
+  
+  <div class="carousel-container">
+    <!-- Exhibitor Slide 1 -->
+    <div class="exhibitor-slide">
+      <img src="images/exhibitors/speedx-motors.png" alt="SpeedX Motors">
+      <div class="slide-content">
+        <h3>SpeedX Motors</h3>
+        <p>Pioneering electric vehicle technology in Sri Lanka</p>
+        <a href="#" class="learn-more">View Showcase</a>
+      </div>
+    </div>
+    
+    <!-- Exhibitor Slide 2 -->
+    <div class="exhibitor-slide">
+      <img src="images/exhibitors/autozone-lanka.png" alt="AutoZone Lanka">
+      <div class="slide-content">
+        <h3>AutoZone Lanka</h3>
+        <p>Performance parts and track tuning specialists</p>
+        <a href="#" class="learn-more">View Showcase</a>
+      </div>
+    </div>
+    
+    <!-- Navigation Arrows -->
+    <button class="carousel-prev">❮</button>
+    <button class="carousel-next">❯</button>
+  </div>
 </section>
