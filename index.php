@@ -7,35 +7,26 @@ include_once 'includes/header.php';
 <!-- === Banner Section with Swiper Slider === -->
 <section class="banner swiper">
   <div class="swiper-wrapper">
-
     <div class="swiper-slide">
       <img src="assets/images/homebg1.jpeg" alt="Slide 1">
-      <div class="slide-caption">
-        <h2>WELCOME TO <br>DIMO <br> TATA MOTORS RAKS AUTO SHOW - 2025  <br> </h2>
-        <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
-      </div>
     </div>
-
     <div class="swiper-slide">
       <img src="assets/images/homebg2.jpeg" alt="Slide 2">
-      <div class="slide-caption">
-        <h2>WELCOME TO <br>DIMO <br> TATA MOTORS RAKS AUTO SHOW - 2025  <br> </h2>
-        <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
-      </div>
     </div>
-
     <div class="swiper-slide">
       <img src="assets/images/homebg3.jpeg" alt="Slide 3">
-      <div class="slide-caption">
-        <h2>WELCOME TO <br>DIMO <br> TATA MOTORS RAKS AUTO SHOW - 2025  <br> </h2>
-        <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
-      </div>
     </div>
+  </div>
 
+  <!-- Static Text Caption -->
+  <div class="slide-caption">
+    <h2>WELCOME TO <br>DIMO <br> TATA MOTORS RAKS AUTO SHOW - 2025</h2>
+    <p>JAFFNA'S 1st INTERNATIONAL AUTOMOBILE AND AUTO ACCESSORIES EXHIBITION.</p>
   </div>
 
   <div class="swiper-pagination"></div>
 </section>
+
 
 
 <!-- === Countdown Timer (Events start in) === -->
@@ -180,9 +171,9 @@ include_once 'includes/header.php';
     </div>
 
     <div class="gallery-thumbnails">
-        <img src="http://localhost/raks-auto-show/admin/uploads/1751446806_WhatsApp%20Image%202025-07-01%20at%2020.37.31_66034f55.jpg" alt="Gallery Image 1">
-        <img src="http://localhost/raks-auto-show/admin/uploads/1751452838_car-1.png" alt="Gallery Image 2">
-        <img src="http://localhost/raks-auto-show/admin/uploads/1751452845_car-2.png" alt="Gallery Image 3">
+        <img src="admin/uploads/1751446806_WhatsApp%20Image%202025-07-01%20at%2020.37.31_66034f55.jpg" alt="Gallery Image 1">
+        <img src="admin/uploads/1751452838_car-1.png" alt="Gallery Image 2">
+        <img src="admin/uploads/1751452845_car-2.png" alt="Gallery Image 3">
         <!-- Add 2–3 thumbnails only -->
     </div>
 

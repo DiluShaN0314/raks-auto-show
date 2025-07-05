@@ -22,14 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateCountdown, 1000);
     updateCountdown();
 
-    new Swiper(".swiper", {
+    const swiper = new Swiper('.swiper', {
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 4000,
+            disableOnInteraction: false,
         },
         pagination: {
-            el: ".swiper-pagination",
-        }
+            el: '.swiper-pagination',
+            clickable: true,
+        },
     });
 
     const toggleBtn = document.getElementById("toggle-dark-mode");

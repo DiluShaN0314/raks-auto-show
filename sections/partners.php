@@ -7,7 +7,7 @@
         <img src="assets/images/partners/IMG_0610.PNG" alt="TATA" style=" width: 161px; height: 66px; padding: 10px;" id="media_partner">
         <h3>PARTICIPANTS</h3>
         <!-- New 3D Participant Section -->
-        <section class="participant-carousel-3d">
+        <!--<section class="participant-carousel-3d">
             <div class="carousel-3d-container">
                 <div class="carousel-3d-track">
                     <img src="assets/images/partners/449159213_10161287446263433_6557108064647473677_n.jpg" alt="MINI">
@@ -19,7 +19,7 @@
                     <img src="assets/images/partners/unnamed.jpg" alt="Azimut">
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <div class="partner-slider">
             <div class="partner-track">

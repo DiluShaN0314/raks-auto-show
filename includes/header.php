@@ -13,9 +13,11 @@
     <!-- JS -->
     <script src="assets/js/main.js" defer></script>
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- Favicon -->
     <link rel="icon" href="assets/images/TATA-Raks-auto-show-300x300-1.png" type="image/x-icon">
     <!-- Lightbox CSS -->
@@ -45,12 +47,11 @@
             <a href="contact" class="<?= ($currentPage == 'contact') ? 'active' : '' ?>">Contact</a>
             <a href="booking" class="book-now-button">
         <span class="button-text">Book Tickets</span>
-         
+
     </a>
         </nav>
         <div class="hamburger" id="hamburger">
         <span>
-
         </span>
         <span></span>
         <span></span>
