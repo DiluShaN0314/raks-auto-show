@@ -1227,8 +1227,8 @@ body.dark-mode .copyright {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 35px;
-  height: 28px;
+  width: 30px;
+  height: 25px;
   cursor: pointer;
   z-index: 1001;
   position: relative;
@@ -1238,7 +1238,7 @@ body.dark-mode .copyright {
 .hamburger span {
   display: block;
   height: 4px;
-  width: 100%;
+  width: 80%;
   background: linear-gradient(90deg, #00c6ff, #0072ff);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
@@ -1290,13 +1290,16 @@ body.dark-mode .copyright {
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 
 
 /* === Responsive Navbar === */
 @media (max-width: 768px) {
+    .section-header {
+        margin-left: 0% !important;
+    }
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -1921,4 +1924,126 @@ body.dark-mode .copyright {
     padding: 6px 12px;
     font-size: 12px;
   }
+}
+
+ #loader-wrapper {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #0f172a;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.loader-logo img {
+  width: 400px;
+  animation: pulseLogo 2s infinite;
+}
+
+@keyframes pulseLogo {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* === Ultra Small Screen Support (max-width: 380px) === */
+@media (max-width: 380px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-now-button {
+        flex-direction: column;
+        padding: 10px;
+        font-size: 0.8rem;
+        height: auto;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .button-badge {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    .slide-caption h2 {
+        font-size: 16px;
+    }
+
+    .slide-caption p {
+        font-size: 8px;
+    }
+
+    .btn-slide {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .partner-track img {
+        height: 30px;
+    }
+
+    .carousel-3d-track img {
+        height: 40px;
+        max-width: 60px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+    .contact-section,
+    .about-section,
+    .styled-section {
+        padding: 20px 10px;
+    }
+
+    .countdown-section {
+        width: 320px !important;
+    }
+
+    .countdown-box {
+        width: 60px;
+        height: 80px;
+    }
+
+    .countdown-number {
+        font-size: 1.5rem;
+        height: 50px;
+        width: 40px;
+        margin: -5px 0 0 16px;
+    }
+
+    .countdown-label {
+        font-size: 0.5rem;
+    }
+
+    .countdown-container {
+        gap: 0rem !important;
+    }
+    .gallery-thumbnails img {
+        width: 100px;
+    }
+
+    .mission h2,
+    .participant-carousel-3d h2 {
+        font-size: 18px;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .image-overlay {
+        position: unset;
+    }
 }

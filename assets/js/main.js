@@ -1,5 +1,20 @@
 // Simple countdown (update date as needed)
 document.addEventListener("DOMContentLoaded", function () {
+     const loader = document.getElementById('loader-wrapper');
+    loader.style.opacity = '0';
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 1000);
+
+    function showLoaderBeforeRedirect(e) {
+        e.preventDefault();
+        document.getElementById('loader-wrapper').style.display = 'flex';
+        setTimeout(() => {
+        window.location.href = e.target.href;
+        }, 1000); // short delay
+        return false;
+    }
+
     const eventDate = new Date("2025-07-25T10:00:00"); // update to your event date
 
     function updateCountdown() {

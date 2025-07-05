@@ -29,7 +29,12 @@
 
 </head>
 <body>
-
+ <!-- === Loading Screen === -->
+    <div id="loader-wrapper">
+      <div class="loader-logo">
+        <img src="assets/images/TATA-Raks-auto-show-Website-icon.png" alt="Loading..." />
+      </div>
+    </div>
 <!-- === Header Section === -->
 <header class="site-header">
     <div class="container">
@@ -40,7 +45,7 @@
         <?php $currentPage = $_GET['page'] ?? 'home'; ?>
         <button id="toggle-dark-mode">🌙 Toggle Dark Mode</button>
         <nav class="navbar">
-            <a href="home" class="<?= ($currentPage == 'home') ? 'active' : '' ?>">Home</a>
+            <a href="home" class="<?= ($currentPage == 'home') ? 'active' : '' ?>" onclick="return showLoaderBeforeRedirect(event)">Home</a>
             <a href="about" class="<?= ($currentPage == 'about') ? 'active' : '' ?>">About</a>
             <a href="exhibitors" class="<?= ($currentPage == 'exhibitors') ? 'active' : '' ?>">Exhibitors</a>
             <a href="gallery" class="<?= ($currentPage == 'gallery') ? 'active' : '' ?>">Gallery</a>
