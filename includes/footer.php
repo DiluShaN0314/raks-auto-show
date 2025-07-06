@@ -14,9 +14,9 @@
             <!-- Contact Info -->
             <div class="footer-box">
                 <h3>Contact Us</h3>
-                <p>Email: <a href="mailto:info@raks.lk">info@raks.lk</a></p>
-                <p>Phone: <a href="tel:+94 77 071 0000">+94 77 071 0000</a></p>
-                <p>Address: 167/2, Raja Street, kopay, Jaffna, Sri Lanka</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@raks.lk">info@raks.lk</a></p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+94 77 071 0000">+94 77 071 0000</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> 167/2, Raja Street, kopay, Jaffna, Sri Lanka</p>
             </div>
 
             <!-- Social Media -->

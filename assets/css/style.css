@@ -1921,7 +1921,7 @@ body.dark-mode .copyright {
     flex: 1 1 40%;
     padding-left: 0; /* Remove excess spacing if not needed */
     max-width: 500px;
-    margin: 100px;
+    margin: 170px 100px 100px 100px;
 }
 
 
