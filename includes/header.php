@@ -44,7 +44,7 @@
             <img src="assets/images/TATA-Raks-auto-show-Website-icon.png" alt="Raks Auto Show Logo" height="50">
         </a>
         <?php $currentPage = $_GET['page'] ?? 'home'; ?>
-        <button id="toggle-dark-mode">🌙 Toggle Dark Mode</button>
+        <!-- <button id="toggle-dark-mode">🌙 Toggle Dark Mode</button> -->
         <nav class="navbar">
             <a href="home" class="<?= ($currentPage == 'home') ? 'active' : '' ?>" onclick="return showLoaderBeforeRedirect(event)">Home</a>
             <a href="about" class="<?= ($currentPage == 'about') ? 'active' : '' ?>" onclick="return showLoaderBeforeRedirect(event)">About</a>
