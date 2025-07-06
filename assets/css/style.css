@@ -2177,3 +2177,127 @@ body.dark-mode .copyright {
         transform: scale(1.4) rotate(-10deg);
     }
 }
+.exhibitors-carousel {
+  padding: 80px 5%;
+  background: #f1f5f9;
+  text-align: center;
+  position: relative;
+}
+
+.exhibitors-carousel h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: all 0.5s ease;
+  scroll-behavior: smooth;
+}
+
+.exhibitor-slide {
+  flex: 0 0 300px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.exhibitor-slide:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.exhibitor-slide img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.slide-content h3 {
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.slide-content p {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #2692e4, #1d4ed8);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2692e4);
+}
+
+/* Navigation Arrows */
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2692e4;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background: #1d4ed8;
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-track {
+    gap: 15px;
+  }
+
+  .exhibitor-slide {
+    flex: 0 0 260px;
+  }
+
+  .carousel-prev,
+  .carousel-next {
+    display: none;
+  }
+}

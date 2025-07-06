@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     }, { threshold: 0.4 });
 
-    observer2.observe(document.querySelector('.gallery-thumbnails'));
+    document.querySelector('.gallery-thumbnails') && observer2.observe(document.querySelector('.gallery-thumbnails'));
 });
 
 window.addEventListener('scroll', () => {
@@ -115,16 +115,33 @@ window.addEventListener('scroll', () => {
     const section = document.querySelector('.contact-preview');
     const triggerPoint = window.innerHeight * 0.85;
 
-    if (section.getBoundingClientRect().top < triggerPoint) {
-        if (!leftBeam.classList.contains('active')) {
-            leftBeam.classList.add('active');
-            rightBeam.classList.add('active');
+    if(section) {
+        if (section.getBoundingClientRect().top < triggerPoint) {
+            if (!leftBeam.classList.contains('active')) {
+                leftBeam.classList.add('active');
+                rightBeam.classList.add('active');
 
-            // Remove after animation ends so it can re-trigger
-            setTimeout(() => {
-                leftBeam.classList.remove('active');
-                rightBeam.classList.remove('active');
-            }, 1500);
+                // Remove after animation ends so it can re-trigger
+                setTimeout(() => {
+                    leftBeam.classList.remove('active');
+                    rightBeam.classList.remove('active');
+                }, 1500);
+            }
         }
     }
+
+});
+
+const prev = document.querySelector(".carousel-prev");
+const next = document.querySelector(".carousel-next");
+const container = document.querySelector(".carousel-container");
+
+const scrollAmount = 320;
+
+next.addEventListener("click", () => {
+    container.scrollLeft += scrollAmount;
+});
+
+prev.addEventListener("click", () => {
+    container.scrollLeft -= scrollAmount;
 });
