@@ -117,22 +117,22 @@ include_once 'includes/header.php';
     <h2>What to Expect</h2>
     <div class="highlight-grid">
         <div class="highlight-card">
-            <i class="fas fa-car"></i>
+            <i class="fas fa-car-side"></i>
             <h3>The Ultimate Auto Line-Up</h3>
             <p>Explore the latest innovations in cars, bikes, and more — all in one place!</p>
         </div>
         <div class="highlight-card">
-            <i class="fas fa-motorcycle"></i>
+            <i class="fas fa-warehouse"></i>
             <h3>Vintage Vehicle Display</h3>
             <p>Step into the past with a special showcase of classic cars and bikes.</p>
         </div>
         <div class="highlight-card">
-            <i class="fas fa-tools"></i>
+            <i class="fas fa-wrench"></i>
             <h3>Car Tools Companies</h3>
             <p>"Precision engineered automotive tools for professional mechanics. Built to last, designed for performance—because every turn of the wrench matters."</p>
         </div>
         <div class="highlight-card">
-            <i class="fas fa-utensils"></i>
+            <i class="fas fa-handshake"></i>
             <h3>Banks,Insurance & Leasing Companies</h3>
             <p>"Powering businesses with tailored financial solutions. From startup loans to corporate treasury services we fuel growth."</p>
         </div>
@@ -158,9 +158,9 @@ include_once 'includes/header.php';
     </div>
 
     <div class="contact-info-box">
-        <p><strong>Phone:</strong> +94 77 071 0000</p>
-        <p><strong>Email:</strong> info@raks.lk</p>
-        <p><strong>Location:</strong> 167/2, Raja Street, kopay, Jaffna, Sri Lanka</p>
+        <p><i class="fas fa-phone-alt"></i> +94 77 071 0000</p>
+        <p><i class="fas fa-envelope"></i> info@raks.lk</p>
+        <p><i class="fas fa-map-marker-alt"></i> 167/2, Raja Street, kopay, Jaffna, Sri Lanka</p>
         <a href="contact">
             <button class="cta-button">View More Contact Info</button>
         </a>
