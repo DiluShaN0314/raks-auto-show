@@ -35,7 +35,7 @@
         <img src="assets/images/logo.png" alt="Loading..." />
       </div>
     </div>
-     
+
 <!-- === Header Section === -->
 <header class="site-header">
     <div class="container">
@@ -47,10 +47,10 @@
         <button id="toggle-dark-mode">🌙 Toggle Dark Mode</button>
         <nav class="navbar">
             <a href="home" class="<?= ($currentPage == 'home') ? 'active' : '' ?>" onclick="return showLoaderBeforeRedirect(event)">Home</a>
-            <a href="about" class="<?= ($currentPage == 'about') ? 'active' : '' ?>">About</a>
-            <a href="exhibitors" class="<?= ($currentPage == 'exhibitors') ? 'active' : '' ?>">Exhibitors</a>
-            <a href="gallery" class="<?= ($currentPage == 'gallery') ? 'active' : '' ?>">Gallery</a>
-            <a href="contact" class="<?= ($currentPage == 'contact') ? 'active' : '' ?>">Contact</a>
+            <a href="about" class="<?= ($currentPage == 'about') ? 'active' : '' ?>" onclick="return showLoaderBeforeRedirect(event)">About</a>
+            <a href="exhibitors" class="<?= ($currentPage == 'exhibitors') ? 'active' : '' ?>" onclick="return showLoaderBeforeRedirect(event)">Exhibitors</a>
+            <a href="gallery" class="<?= ($currentPage == 'gallery') ? 'active' : '' ?>" onclick="return showLoaderBeforeRedirect(event)">Gallery</a>
+            <a href="contact" class="<?= ($currentPage == 'contact') ? 'active' : '' ?>" onclick="return showLoaderBeforeRedirect(event)">Contact</a>
             <a href="booking" class="book-now-button">
         <span class="button-text">Book Tickets</span>
 

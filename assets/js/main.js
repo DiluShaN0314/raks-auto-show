@@ -1,6 +1,15 @@
+// Scroll to top on every page load
+window.onload = function () {
+    window.scrollTo(0, 0);
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+};
+
 // Simple countdown (update date as needed)
 document.addEventListener("DOMContentLoaded", function () {
-     const loader = document.getElementById('loader-wrapper');
+    const loader = document.getElementById('loader-wrapper');
+    loader.style.display = '';
     loader.style.opacity = '0';
     setTimeout(() => {
       loader.style.display = 'none';
@@ -8,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showLoaderBeforeRedirect(e) {
         e.preventDefault();
-        document.getElementById('loader-wrapper').style.display = 'flex';
+        document.getElementById('loader-wrapper').style.display = '';
         setTimeout(() => {
         window.location.href = e.target.href;
         }, 2500); // short delay
@@ -107,7 +116,52 @@ document.addEventListener("DOMContentLoaded", function () {
     }, { threshold: 0.4 });
 
     document.querySelector('.gallery-thumbnails') && observer2.observe(document.querySelector('.gallery-thumbnails'));
-});
+
+    const aboutSection = document.querySelector(".about-section");
+
+    const observer3 = new IntersectionObserver(
+        (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+            aboutSection.classList.add("animate");
+            } else {
+            aboutSection.classList.remove("animate"); // triggers every time
+            }
+        });
+        },
+        { threshold: 0.3 }
+    );
+
+    aboutSection && observer3.observe(aboutSection);
+
+    const cards = document.querySelectorAll(".exhibitor-card");
+
+    const observer4 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animated");
+        } else {
+            // remove to re-trigger when scrolling again
+            entry.target.classList.remove("animated");
+        }
+        });
+    }, { threshold: 0.3 });
+
+    cards.forEach((card) => observer4.observe(card));
+
+    const items = document.querySelectorAll(".gallery-item");
+
+  const observer5 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(item => observer5.observe(item));
+
+    });
 
 window.addEventListener('scroll', () => {
     const leftBeam = document.getElementById('leftBeam');
@@ -129,19 +183,4 @@ window.addEventListener('scroll', () => {
             }
         }
     }
-
-});
-
-const prev = document.querySelector(".carousel-prev");
-const next = document.querySelector(".carousel-next");
-const container = document.querySelector(".carousel-container");
-
-const scrollAmount = 320;
-
-next.addEventListener("click", () => {
-    container.scrollLeft += scrollAmount;
-});
-
-prev.addEventListener("click", () => {
-    container.scrollLeft -= scrollAmount;
 });

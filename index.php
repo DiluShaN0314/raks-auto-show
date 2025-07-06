@@ -1,6 +1,5 @@
 <?php
 // index.php - Raks Auto Show Homepage
-
 include_once 'includes/header.php';
 ?>
 
@@ -110,7 +109,7 @@ include_once 'includes/header.php';
 
       <!-- Racing car overlay -->
     <div class="car-overlay">
-        <img src="assets/images/features.png" alt="Racing Car" class="racing-car">
+        <img src="assets/images/blue_run.png" alt="Racing Car" class="racing-car">
     </div>
 </section>
 <!-- <section class="highlights"> -->
