@@ -44,7 +44,7 @@
         </div>
 
         <div class="copyright">
-            <p>&copy; <?php echo date('2023');?>  Raks Car Wash  _ō͡≡o˞̶_ All rights reserved.</p>
+            <p>&copy; <?php echo date('Y');?>  Raks Car Wash  _ō͡≡o˞̶_ All rights reserved.</p>
         </div>
     </div>
 </footer>
