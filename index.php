@@ -180,6 +180,7 @@ include_once 'includes/header.php';
         <img src="admin/uploads/1751446806_WhatsApp%20Image%202025-07-01%20at%2020.37.31_66034f55.jpg" alt="Gallery Image 1">
         <img src="admin/uploads/1751452838_car-1.png" alt="Gallery Image 2">
         <img src="admin/uploads/1751452845_car-2.png" alt="Gallery Image 3">
+        
         <!-- Add 2–3 thumbnails only -->
     </div>
 
