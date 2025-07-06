@@ -10,27 +10,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body    = "From: $name <$email>\n\n$message";
 
     $sent = mail($to, $subject, $body);
+    $alertClass = $sent ? "success" : "error";
+
     $alert = $sent ? "✅ Message sent successfully!" : "❌ Message failed. Try again.";
 }
 ?>
 
-<section class="styled-section">
-    <h2>Contact Us</h2>
-    <?php if (isset($alert)) echo "<p style='color: green;'>$alert</p>"; ?>
+<section class="contact-form-section">
+  <h2>Get in Touch</h2>
 
-    <form method="POST" action="router.php?page=contact">
-        <label>Name:</label>
-        <input type="text" name="name" required>
+  <?php if (isset($alert)) echo "<p class='form-alert $alertClass'>$alert</p>";?>
 
-        <label>Email:</label>
-        <input type="email" name="email" required>
+  <form method="POST" action="router.php?page=contact" class="contact-form">
+    <div class="form-group">
+      <input type="text" name="name" required>
+      <label>Name</label>
+    </div>
 
-        <label>Message:</label>
-        <textarea name="message" rows="5" required></textarea>
+    <div class="form-group">
+      <input type="email" name="email" required>
+      <label>Email</label>
+    </div>
 
-        <button type="submit">Send Message</button>
-    </form>
+    <div class="form-group">
+      <textarea name="message" rows="5" required></textarea>
+      <label>Message</label>
+    </div>
 
-
+    <button type="submit" class="form-btn">Send Message</button>
+  </form>
 </section>
+
 
