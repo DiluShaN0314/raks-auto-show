@@ -1,15 +1,22 @@
 <section class="about-section" id="about">
-  <h2><span class="highlighted">About</span> Us</h2>
-  <p>Welcome to the Raks Auto Show – Sri Lanka's premier automobile showcase event. Since our launch in 2025, we have brought together car enthusiasts, manufacturers, dealers, and collectors under one roof.</p>
+  <div class="about-container">
+    <div class="about-text" data-animate="fade-up">
+      <h2><span class="">About</span> Us</h2>
+      <p>Welcome to the Raks Auto Show – Sri Lanka's premier automobile showcase event. Since our launch in 2025, we’ve united car lovers, manufacturers, dealers, and collectors under one roof.</p>
 
-  <h3>Our History</h3>
-  <p>The event began as a small community gathering and has grown into an annual extravaganza featuring:</p>
-  <ul>
-    <li>Luxury and vintage car exhibitions</li>
-    <li>Motorbike stunt shows</li>
-    <li>Electric vehicle showcases</li>
-    <li>Celebrity meet-and-greets</li>
-  </ul>
+      <h3>Our History</h3>
+      <p>The event began as a humble community gathering and has evolved into a spectacular annual celebration featuring:</p>
 
-  <p>Our mission is to ignite automotive passion and innovation across Sri Lanka and beyond.</p>
+      <ul class="about-list">
+        <li><i class="fas fa-car-side"></i> Luxury and vintage car exhibitions</li>
+        <li><i class="fas fa-biking"></i> Motorbike stunt shows</li>
+        <li><i class="fas fa-bolt"></i> Electric vehicle showcases</li>
+        <li><i class="fas fa-star"></i> Celebrity meet-and-greets</li>
+      </ul>
+
+      <p>Our mission is to ignite automotive passion and innovation across Sri Lanka and beyond.</p>
+    </div>
+    <img src="assets/images/speedometer.png" alt="Speedometer" class="speedometer">
+    <img src="assets/images/speedometer_needle.png" alt="Speedometer" class="speedometer-bg">
+  </div>
 </section>
