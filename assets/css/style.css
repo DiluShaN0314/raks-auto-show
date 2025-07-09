@@ -765,7 +765,7 @@ button:hover {
 /* === About Us Section === */
 .about-section {
   max-width: 1100px;
-  margin: 150px auto 80px auto;
+  margin: 50px auto 80px auto;
   padding: 60px 40px;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
@@ -930,29 +930,38 @@ button:hover {
 .speedometer,
 .speedometer-bg {
   position: absolute;
-  top: 4px;
-  right: 15px;
-  width: 150px;
   z-index: 0;
+  opacity: 0.5;
+}
+
+.speedometer{
+  top: 8px;
+  right: 20%;
 }
 
 .speedometer-bg {
   animation: spinGauge 40s linear infinite;
+  top: 30px;
+  right: 25%;
 }
 
 @media (max-width: 768px) {
-  .speedometer,
-  .speedometer-bg {
-    width: 115px;
+  .speedometer {
+    /* width: 115px; */
     top: 10px;
-    right: 10px;
+    right: 87px;
+  }
+
+  .speedometer-bg {
+    top: 30px;
+    right: 130px;
   }
 }
 
 @media (max-width: 550px) {
   .speedometer,
   .speedometer-bg {
-    width: 110px;
+    /* width: 110px; */
     top: 8px;
     right: 8px;
   }
@@ -961,7 +970,7 @@ button:hover {
 @media (max-width: 480px) {
   .speedometer,
   .speedometer-bg {
-    width: 100px;
+    width: 410px;
     top: 6px;
     right: 6px;
   }
@@ -970,7 +979,7 @@ button:hover {
 @media (max-width: 380px) {
   .speedometer,
   .speedometer-bg {
-    width: 80px;
+    width: 350px;
     top: 5px;
     right: 5px;
   }
@@ -1115,6 +1124,31 @@ body.dark-mode .partners-section {
     font-weight: bold;
     margin-top: 15px;
     display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #00b894;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  /* background: rgba(255, 255, 255, 0.85); */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  /* backdrop-filter: blur(8px); */
+}
+
+.form-group label {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  color: #64748b;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  /* background: white; */
+  padding: 0 4px;
 }
 
 .contact-section input,
@@ -2703,16 +2737,6 @@ button:hover,
     margin-top: 150px;
 }
 
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(8px);
-}
-
 .form-group {
   position: relative;
   margin-bottom: 30px;
@@ -2726,45 +2750,13 @@ button:hover,
   border: 1px solid #cbd5e1;
   border-radius: 8px;
   background: transparent;
-  color: #1e293b;
+  color: #fff;
   outline: none;
   transition: 0.3s ease;
 }
 
 .contact-form textarea {
   resize: vertical;
-}
-
-.form-group label {
-  position: absolute;
-  left: 12px;
-  top: 14px;
-  color: #64748b;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  /* background: white; */
-  padding: 0 4px;
-}
-
-.contact-form input:focus + label,
-.contact-form input:not(:placeholder-shown) + label,
-.contact-form textarea:focus + label,
-.contact-form textarea:not(:placeholder-shown) + label {
-  top: -10px;
-  left: 10px;
-  font-size: 0.8rem;
-  color: #2563eb;
-}
-
-.form-alert {
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  color: white;
-  background: #22c55e;
-  display: inline-block;
-  animation: fadeIn 0.5s ease-in-out;
 }
 
 /* === Keyframes === */
@@ -2843,3 +2835,99 @@ button:hover,
   }
 }
 
+.about-banner {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: url('../images/about-banner.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.about-banner h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.about-banner p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-banner h1 {
+    font-size: 2rem;
+  }
+
+  .about-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-banner {
+    height: 40vh;
+  }
+
+  .banner-overlay {
+    padding: 20px 10px;
+  }
+
+  .about-banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-banner p {
+    font-size: 0.95rem;
+  }
+}
+
+.contact-video-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-bg-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.5); /* darken for better contrast */
+}
+
+/* Ensure content stays above video */
+.contact-form-section {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional: extra overlay layer for style */
+.contact-video-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}

@@ -16,29 +16,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<section class="contact-form-section">
-  <h2>Get in Touch</h2>
+<div class="contact-video-wrapper">
+  <video autoplay muted loop playsinline class="contact-bg-video">
+    <source src="assets/videos/contact-bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  <?php if (isset($alert)) echo "<p class='form-alert $alertClass'>$alert</p>";?>
+  <section class="contact-form-section">
+    <h2>Get in Touch</h2>
 
-  <form method="POST" action="router.php?page=contact" class="contact-form">
-    <div class="form-group">
-      <input type="text" name="name" required>
-      <label>Name</label>
-    </div>
+    <?php if (isset($alert)) echo "<p class='form-alert $alertClass'>$alert</p>";?>
 
-    <div class="form-group">
-      <input type="email" name="email" required>
-      <label>Email</label>
-    </div>
+    <form method="POST" action="router.php?page=contact" class="contact-form">
+      <div class="form-group">
+        <input type="text" name="name" required>
+        <label>Name</label>
+      </div>
 
-    <div class="form-group">
-      <textarea name="message" rows="5" required></textarea>
-      <label>Message</label>
-    </div>
+      <div class="form-group">
+        <input type="email" name="email" required>
+        <label>Email</label>
+      </div>
 
-    <button type="submit" class="form-btn">Send Message</button>
-  </form>
-</section>
+      <div class="form-group">
+        <textarea name="message" rows="5" required></textarea>
+        <label>Message</label>
+      </div>
+
+      <button type="submit" class="form-btn">Send Message</button>
+    </form>
+  </section>
+</div>
+
 
 

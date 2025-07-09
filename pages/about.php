@@ -1,3 +1,10 @@
+<section class="about-banner">
+  <div class="banner-overlay">
+    <h1>Driven by Passion</h1>
+    <p>The ultimate automotive experience in Sri Lanka</p>
+    <a href="contact" class="btn-slide cta-button">Get In Touch</a>
+  </div>
+</section>
 <section class="about-section" id="about">
   <div class="about-container">
     <div class="about-text" data-animate="fade-up">
