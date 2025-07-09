@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     }, { threshold: 0.4 });
 
-    document.querySelectorAll('.animate-section').forEach(section => {
+    document.querySelectorAll('.animate-section') && document.querySelectorAll('.animate-section').forEach(section => {
     observer.observe(section);
     });
 
@@ -147,19 +147,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, { threshold: 0.3 });
 
-    cards.forEach((card) => observer4.observe(card));
+    cards && cards.forEach((card) => observer4.observe(card));
 
     const items = document.querySelectorAll(".gallery-item");
 
-  const observer5 = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, { threshold: 0.2 });
+    const observer5 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+        });
+    }, { threshold: 0.2 });
 
-  items.forEach(item => observer5.observe(item));
+    items && items.forEach(item => observer5.observe(item));
 
     });
 

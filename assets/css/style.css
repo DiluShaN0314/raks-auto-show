@@ -182,9 +182,116 @@ body::before {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.footer-one {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: url('../images/footer-bg.png') no-repeat center center/cover;
+  width: 100%;
+}
+
 .footer-box {
-    flex: 1 1 200px;
-    margin: 10px;
+  flex: 1 1 300px;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Optional overlay for better text readability */
+.footer-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  z-index: -1;
+  /* border-radius: 12px; */
+}
+
+.footer-one::before {
+  background: rgba(0, 0, 0, 0.45); /* adjust for desired darkness */
+}
+
+/* Keep links and icons white */
+.footer-box a,
+.footer-box i {
+  color: #fff;
+}
+
+.footer-box a:hover {
+  color: #00e6ff;
+  transition: color 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  .footer-one {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .footer-box {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-box {
+    padding: 18px;
+  }
+
+  .footer-box h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-box p,
+  .footer-box a,
+  .footer-box li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-one {
+    padding: 16px;
+  }
+
+  .footer-box {
+    padding: 16px;
+  }
+
+  .footer-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-box p,
+  .footer-box a,
+  .footer-box li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-box {
+    padding: 14px;
+  }
+
+  .footer-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-box p,
+  .footer-box a,
+  .footer-box li {
+    font-size: 0.85rem;
+  }
 }
 
 .social-icons {
@@ -767,7 +874,7 @@ button:hover {
   max-width: 1100px;
   margin: 50px auto 80px auto;
   padding: 60px 40px;
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
   backdrop-filter: blur(10px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
@@ -827,7 +934,7 @@ button:hover {
 .about-section p,
 .about-section ul {
   font-size: 1.1rem;
-  color: #475569;
+  color: #b6c1d8;
   line-height: 1.8;
   margin-bottom: 16px;
   position: relative;
@@ -836,7 +943,7 @@ button:hover {
 
 .about-section ul {
   padding-left: 20px;
-  list-style: disc;
+  list-style: none;
 }
 
 .about-section li {
@@ -1271,7 +1378,7 @@ body.dark-mode .contact-section a {
     background-color: #f9f9f9;
     color: #333;
     max-width: 1000px;
-    margin:  150px auto auto auto;
+    margin:  50px auto auto auto;
     line-height: 1.7;
 }
 
@@ -1557,6 +1664,7 @@ body.dark-mode .copyright {
 
 
 .slide-caption h2 {
+  font-family: serif;
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 12px;
@@ -2559,7 +2667,7 @@ body.dark-mode .copyright {
 .exhibitors-grid {
   padding: 100px 5%;
   /* background: #f8fafc; */
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .exhibitor-cards {
@@ -2960,4 +3068,214 @@ button:hover,
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
+}
+
+.gallery-banner {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background: url('../images/gallery-banner.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 120px; /* space below header */
+}
+
+.gallery-banner-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  animation: fadeInBanner 1.5s ease-out forwards;
+}
+
+.gallery-banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.gallery-banner p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes fadeInBanner {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-banner {
+    height: 40vh;
+  }
+
+  .gallery-banner h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .gallery-banner {
+    height: 35vh;
+  }
+
+  .gallery-banner-overlay {
+    padding: 20px;
+  }
+
+  .gallery-banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .gallery-banner p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-banner p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .gallery-banner {
+    height: 30vh;
+  }
+
+  .gallery-banner h1 {
+    font-size: 1.3rem;
+  }
+
+  .gallery-banner p {
+    font-size: 0.85rem;
+  }
+
+  .gallery-banner-overlay {
+    padding: 16px;
+  }
+}
+
+.exhibitors-banner {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background: url('../images/exhibitors-banner.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+.exhibitors-banner-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  animation: fadeInBanner 1.5s ease-out forwards;
+}
+
+.exhibitors-banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.exhibitors-banner p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes fadeInBanner {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .exhibitors-banner {
+    height: 40vh;
+  }
+
+  .exhibitors-banner h1 {
+    font-size: 2rem;
+  }
+
+  .exhibitors-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .exhibitors-banner {
+    height: 35vh;
+  }
+
+  .exhibitors-banner-overlay {
+    padding: 20px;
+  }
+
+  .exhibitors-banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .exhibitors-banner p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .exhibitors-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .exhibitors-banner p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .exhibitors-banner {
+    height: 30vh;
+  }
+
+  .exhibitors-banner h1 {
+    font-size: 1.3rem;
+  }
+
+  .exhibitors-banner p {
+    font-size: 0.85rem;
+  }
+
+  .exhibitors-banner-overlay {
+    padding: 16px;
+  }
 }

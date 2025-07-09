@@ -3,6 +3,13 @@ $dir = "admin/uploads/";
 $images = array_diff(scandir($dir), ['.', '..']);
 ?>
 
+<section class="gallery-banner">
+  <div class="gallery-banner-overlay">
+    <h1>Gallery Highlights</h1>
+    <p>Where horsepower meets elegance — relive the moments</p>
+  </div>
+</section>
+
 <section class="styled-section gallery-section">
     <div class="gallery-header">
         <h2><span>✨</span> Our Stunning Gallery</h2>
