@@ -118,22 +118,22 @@ include_once 'includes/header.php';
     <div class="highlight-grid">
         <div class="highlight-card">
             <i class="fas fa-car-side"></i>
-            <h3>The Ultimate Auto Line-Up</h3>
+            <h3>The Ultimate Auto Line-Up</h3><br>
             <p>Explore the latest innovations in cars, bikes, and more — all in one place!</p>
         </div>
         <div class="highlight-card">
             <i class="fas fa-warehouse"></i>
-            <h3>Vintage Vehicle Display</h3>
+            <h3>Vintage Vehicle Display</h3><br>
             <p>Step into the past with a special showcase of classic cars and bikes.</p>
         </div>
         <div class="highlight-card">
             <i class="fas fa-wrench"></i>
-            <h3>Car Tools Companies</h3>
+            <h3>Car Tools Companies</h3><br>
             <p>"Precision engineered automotive tools for professional mechanics. Built to last, designed for performance—because every turn of the wrench matters."</p>
         </div>
         <div class="highlight-card">
             <i class="fas fa-handshake"></i>
-            <h3>Banks,Insurance & Leasing Companies</h3>
+            <h3>Banks,Insurance & Leasing Companies</h3><br>
             <p>"Powering businesses with tailored financial solutions. From startup loans to corporate treasury services we fuel growth."</p>
         </div>
     </div>
@@ -151,20 +151,23 @@ include_once 'includes/header.php';
 <section class="contact-preview">
      <div class="headlight-beam left-beam" id="leftBeam"></div>
     <div class="headlight-beam right-beam" id="rightBeam"></div>
-    <div class="section-header2" style="text-align: center;">
-        <span class="section-tag">Get In Touch</span>
-        <h2>Contact <span class="highlight">Us</span></h2>
-        <div class="divider2"></div>
+    <div class="contact-blur">
+        <div class="section-header2" style="text-align: center;">
+            <span class="section-tag">Get In Touch</span>
+            <h2>Contact <span class="highlight">Us</span></h2>
+            <div class="divider2"></div>
+        </div>
+
+        <div class="contact-info-box">
+            <p><i class="fas fa-phone-alt"></i> +94 77 071 0000</p>
+            <p><i class="fas fa-envelope"></i> info@raks.lk</p>
+            <p><i class="fas fa-map-marker-alt"></i> 167/2, Raja Street, kopay, Jaffna, Sri Lanka</p>
+            <a href="contact">
+                <button class="cta-button">View More Contact Info</button>
+            </a>
+        </div>
     </div>
 
-    <div class="contact-info-box">
-        <p><i class="fas fa-phone-alt"></i> +94 77 071 0000</p>
-        <p><i class="fas fa-envelope"></i> info@raks.lk</p>
-        <p><i class="fas fa-map-marker-alt"></i> 167/2, Raja Street, kopay, Jaffna, Sri Lanka</p>
-        <a href="contact">
-            <button class="cta-button">View More Contact Info</button>
-        </a>
-    </div>
 </section>
 
 
