@@ -19,12 +19,12 @@
           <p>Bringing classic car lovers, supercar fans, and EV pioneers together in one shared experience.</p>
         </div>
         <div class="about-card">
-          <img src="assets/images/knowledge.png" alt="Knowledge Sharing">
+          <img src="assets/images/knowledge.jpg" alt="Knowledge Sharing">
           <h4>Knowledge Exchange</h4>
           <p>Learn from mechanics, designers, engineers, and detailing experts at live demos and panels.</p>
         </div>
         <div class="about-card">
-          <img src="assets/images/design.png" alt="Design & Craftsmanship">
+          <img src="assets/images/design.jpg" alt="Design & Craftsmanship">
           <h4>Design & Craftsmanship</h4>
           <p>Explore advanced engineering, concept vehicles, and custom automotive builds.</p>
         </div>
