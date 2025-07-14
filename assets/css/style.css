@@ -192,6 +192,8 @@ body::before {
   justify-content: space-between;
   width: 100%;
   color: #fff;
+  min-height: 300px;
+  z-index: 1;
 }
 
 .footer-one::after {
@@ -201,9 +203,10 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url('../images/footer-bg.png') no-repeat center center/cover;
+  background: url('../images/footer-bg.png') no-repeat center center;
   filter: blur(8px);
   z-index: 0;
+  transition: background-position 0.3s ease;
 }
 
 .footer-box {
@@ -2674,6 +2677,42 @@ body.dark-mode .copyright {
     margin: 0 0 0 30%;
 }
 
+@media (max-width: 1024px) {
+  .contact-blur {
+    width: 50%;
+    margin: 0 0 0 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-blur {
+    width: 55%;
+    margin: 0 0 0 20%;
+  }
+  .contact-preview {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-blur {
+    width: 71%;
+    margin: 0 0 0 9%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-blur {
+    width: 90%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-blur {
+    width: 87%;
+  }
+}
 /* Shared beam style */
 .headlight-beam {
     position: absolute;
@@ -3007,27 +3046,37 @@ button:hover,
   }
 }
 
+@media (max-width: 1024px) {
+  .racing-car {
+    height: 50%;
+    margin-bottom: 550px;
+  }
+}
+
 @media (max-width: 768px) {
   .racing-car {
-    height: 100px;
+    height: 45%;
+    margin-bottom: 550px;
   }
 }
 
 @media (max-width: 550px) {
   .racing-car {
-    height: 80px;
+    height: 35%;
   }
 }
 
 @media (max-width: 480px) {
   .racing-car {
-    height: 70px;
+    height: 30%;
+    margin-bottom: 700px;
   }
 }
 
 @media (max-width: 380px) {
   .racing-car {
-    height: 60px;
+    height: 25%;
+    margin-bottom: 900px;
   }
 }
 
@@ -3479,6 +3528,13 @@ button:hover,
 
   .about-card img {
     /* height: 40px; */
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-one::after {
+    background-position: center top;
+    background-size: contain;
   }
 }
 

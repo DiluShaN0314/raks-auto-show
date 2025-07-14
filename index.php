@@ -178,13 +178,31 @@ include_once 'includes/header.php';
         <h2>Photo <span class="highlight">Gallery</span></h2>
         <div class="divider2"></div>
     </div>
+    <?php
+        $categories = ['modern', 'vintage', 'bikes'];
+        $baseDir = 'admin/uploads/';
+        $thumbnails = [];
+
+        // Fetch 2–3 thumbnails total (can limit later)
+        foreach ($categories as $cat) {
+            $folder = $baseDir . $cat . '/';
+            if (!is_dir($folder)) continue;
+
+            $files = array_diff(scandir($folder), ['.', '..']);
+            foreach ($files as $file) {
+                $thumbnails[] = $folder . $file;
+            }
+        }
+
+        // Shuffle and limit to 3 thumbnails
+        shuffle($thumbnails);
+        $thumbnails = array_slice($thumbnails, 0, 3);
+    ?>
 
     <div class="gallery-thumbnails">
-        <img src="admin/uploads/1751446806_WhatsApp%20Image%202025-07-01%20at%2020.37.31_66034f55.jpg" alt="Gallery Image 1">
-        <img src="admin/uploads/1751452838_car-1.png" alt="Gallery Image 2">
-        <img src="admin/uploads/1751452845_car-2.png" alt="Gallery Image 3">
-        
-        <!-- Add 2–3 thumbnails only -->
+        <?php foreach ($thumbnails as $index => $img): ?>
+            <img src="<?= $img ?>" alt="Gallery Image <?= $index + 1 ?>">
+        <?php endforeach; ?>
     </div>
 
     <div style="text-align: center; margin-top: 20px;">
